@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo-container">Gym de calidad</div>
+        <nav>
+            <ul>    
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="saludo">Bienvenidos al mejor lugar para hacer ejercicio</h1>
+            <p>Mejora tu salud y forma fisica con "Gym de calidad"</p>
+            
+        </section>
+
+        <section class="promociones-1">
+            <h2 class="title-1">Promociones de Gym </h2>
+            <div class="promocion-container-1">
+                <div class="promocion-item">
+                    <h3 id="texto-color1">Excelente pongamonos en forma</h3>
+                    <img class="promocion-img-1" src="https://res.cloudinary.com/dsmisjg3a/image/upload/v1724617140/gym1_adgvwb.jpg" alt="Promocion 1">
+                </div>
+                <div class="promocion-item">
+                    <h3 id="texto-color2">Con un amigo es mejor</h3>
+                    <img class="promocion-img-1" src="https://res.cloudinary.com/dsmisjg3a/image/upload/v1724617150/gym2_lghc0l.jpg" alt="Promocion 2">
+                </div>
+                <div class="promocion-item">
+                    <h3 id="texto-color3">Promocion del dia</h3>
+                    <img class="promocion-img-1" src="https://res.cloudinary.com/dsmisjg3a/image/upload/v1724617155/gym3_mw9qn7.jpg" alt="Promoción 3">
+                </div>
+            </div>
+        </section>
+            
+            
+            <section class="container">
+                
+                    <div class="card-header">
+                     Vamos a ponernos en forma
+                    </div>
+                    <div class="card-body">
+                     
+                      <p class="card-text">Elije la promocion que mas te paresca</p>
+                      <a href="#" class="btn btn-primary" onclick="cambiarEstilo('texto-color1', '#f00')">Promocion1</a>
+                     <a href="#" class="btn btn-primary" onclick="cambiarEstilo('texto-color2', 'green')">Promocion2</a>
+                    <a href="#" class="btn btn-primary" onclick="cambiarEstilo('texto-color3', 'rgb(0, 0, 255)')">Promocion 3</a>
+
+                    </div>
+                  </div>
+            </section>
+            
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <script src="./js/main.js"></script>
+        </section>
+        
+
+        
+
+        <section class="suscripcion">
+            <h2 class="title-suscription">Suscríbete para recibir nuestras ofertas</h2>
+            <input type="text" id="nuevaTarea" placeholder="Inscribe a un amigo">
+        <button onclick="agregarTarea()">Agregar nuevo usuario</button>
+        <ul id="listaTareas">
+            <!-- Las tareas se añadirán aquí -->
+        </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gym de calidad. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

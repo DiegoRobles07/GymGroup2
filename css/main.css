@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Josefin+Sans:ital,wght@0,500;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #282828;
+    background-color: #81d6a5;
+    border: 20px;
+}
+h3{
+
+    width: 20rem;
+    height: 60px;
+}
+header {
+    background: #94bbe9;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width:150px;
+    height: auto;
+}
+
+nav ul {
+    font-family: "Cinzel", serif;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.hero {
+    
+    background: url('hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5rem 1rem;
+}
+
+.hero h1 {
+    
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+}
+
+.hero P {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    color: #000000;
+    padding-bottom: 1rem;
+}
+
+
+.promociones-1{
+    display: grid;
+    grid-template-rows: 0.75fr 3fr 0.75fr;
+    background-color: #F4D9D0;
+    border: 1px solid #e0b8ab;
+   padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   
+    
+}
+
+.title-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cinzel", serif;
+}
+
+.promocion-container-1{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    gap: 1rem;
+    text-align: center;
+}
+
+.promocion-img-1{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    
+    border-radius: 16px;
+}
+
+
+
+.container-description{
+    display: flex;
+    padding-top: 1.5rem;
+    align-content: center;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.promociones-2{
+    display: grid;
+    grid-template-rows: 0.75fr 3fr 0.75fr;
+    background-color: #fefae0da;
+    border: 1px solid #c7c4ae;
+    width: 100%;
+    height: 100%;
+   
+    
+}
+
+.title-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cinzel", serif;
+}
+
+.promocion-container-2{
+    display: flex;
+    height: 50vh;
+    gap: 1rem;
+}
+
+.promocion-img-2{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    
+    border-radius: 16px;
+}
+
+
+
+.description-2{
+    display: flex;
+    padding-bottom: 0.5rem;
+    align-content: center;
+    justify-content: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+}
+
+
+
+.suscripcion {
+    display: flex;
+    align-items: center;
+    font-family: "Cinzel", serif;
+    padding: 2rem 1rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title-suscription{
+    padding-right: 1rem;
+}
+
+input[type="email"] {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+    flex: 1;
+    outline: none;
+}
+
+input[type="email"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+
+footer {
+    background-color: #282828;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+}
+/* Centrar el contenedor principal */
+.container {
+    text-align: center;
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para un efecto de profundidad */
+    width: 100%;
+    max-width: 600px; /* Máximo ancho para el contenedor */
+}
+
+/* Estilo para tareas completadas */
+.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Estilo para cada tarea en la lista */
+.tarea {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Alinea el texto y el botón en extremos opuestos */
+    align-items: center;
+}
+
+/* Estilo para el botón de eliminar */
+.tarea button {
+    margin-left: 10px;
+    background-color: #e74c3c; /* Color de fondo rojo */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tarea button:hover {
+    background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+}
+
+/* Estilo para el input y el botón de agregar tarea */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db; /* Color de fondo azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el ratón */
+}
+
+
+@media (min-width: 320px) and (max-width: 480px){}
+@media (min-width: 481px) and (max-width: 768px){}
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){}
+@media (min-width: 1025px) and (max-width: 1280px){}
+@media (min-width: 1281px){}
