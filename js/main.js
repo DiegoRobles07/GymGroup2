@@ -47,6 +47,25 @@ function cambiarEstilo(id, color) {
     elemento.style.fontSize = '1.5rem';
 }
 
+// Función para alternar el menú desplegable
+function toggleDropdown(dropdownId) {
+    const dropdown = document.getElementById(dropdownId);
+    dropdown.classList.toggle("show");
+}
+
+// Cierra el dropdown si el usuario hace clic fuera de él
+window.onclick = function(event) {
+    if (!event.target.matches('#menu-inicio')) {
+        const dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
 // fuction confeti
 function emoji(){
     const defaults = {
