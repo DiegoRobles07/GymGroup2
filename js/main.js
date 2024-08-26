@@ -47,3 +47,75 @@ function cambiarEstilo(id, color) {
     elemento.style.fontSize = '1.5rem';
 }
 
+// fuction confeti
+function emoji(){
+    const defaults = {
+      spread: 360,
+      ticks: 100,
+      gravity: 0,
+      decay: 0.94,
+      startVelocity: 30,
+    };
+    
+    
+    function shoot() {
+      confetti({
+        ...defaults,
+        particleCount: 30,
+        scalar: 1.2,
+        shapes: ["circle", "square"],
+        colors: ["#000000", "#fdff6a"],
+      });
+  
+      confetti({
+        ...defaults,
+        particleCount: 20,
+        scalar: 4,
+        shapes: ["emoji"],
+        shapeOptions: {
+          emoji: {
+            value: ["🦾", "😎","🏋️","⭐"],
+          },
+        },
+      });
+    }
+    
+    setTimeout(shoot, 0);
+    setTimeout(shoot, 100);
+    setTimeout(shoot, 200);
+  }
+  
+
+
+  function star(){
+    const defaults = {
+        spread: 360,
+        ticks: 50,
+        gravity: 0,
+        decay: 0.94,
+        startVelocity: 30,
+        shapes: ["star"],
+        colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
+      };
+      
+      function shoot() {
+        confetti({
+          ...defaults,
+          particleCount: 40,
+          scalar: 1.2,
+          shapes: ["star"],
+        });
+      
+        confetti({
+          ...defaults,
+          particleCount: 10,
+          scalar: 0.75,
+          shapes: ["circle"],
+        });
+      }
+      
+      setTimeout(shoot, 0);
+      setTimeout(shoot, 100);
+      setTimeout(shoot, 200);
+
+  }

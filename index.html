@@ -52,9 +52,9 @@
                     <div class="card-body">
                      
                       <p class="card-text">Elije la promocion que mas te paresca</p>
-                      <a href="#" class="btn btn-primary" onclick="cambiarEstilo('texto-color1', '#f00')">$1.50 - 2 días</a>
-                     <a href="#" class="btn btn-primary" onclick="cambiarEstilo('texto-color2', 'green')">$10 - 15 días </a>
-                    <a href="#" class="btn btn-primary" onclick="cambiarEstilo('texto-color3', 'rgb(0, 0, 255)')">$25 - 45 días</a>
+                      <a href="#" class="btn btn-primary" type="button" onclick="star()" onclick="cambiarEstilo('texto-color1', '#f00')">$1.50 - 2 días</a>
+                     <a href="#" class="btn btn-primary" type="button" onclick="star()" onclick="cambiarEstilo('texto-color2', 'green')">$10 - 15 días </a>
+                    <a href="#" class="btn btn-primary" type="button" onclick="star()" onclick="cambiarEstilo('texto-color3', 'rgb(0, 0, 255)')">$25 - 45 días</a>
 
                     </div>
                   </div>
@@ -70,7 +70,7 @@
         <section class="suscripcion">
             <h2 class="title-suscription">Suscríbete para recibir nuestras ofertas</h2>
             <input type="text" id="nuevaTarea" placeholder="Inscribe a un amigo">
-        <button onclick="agregarTarea()" class="btn-adduser">Agregar nuevo usuario</button>
+        <button type="button" onclick="emoji()" onclick="agregarTarea()" class="btn-adduser">Agregar nuevo usuario</button>
         <ul id="listaTareas">
             <!-- Las tareas se añadirán aquí -->
         </ul>
@@ -81,5 +81,10 @@
     <footer>
         <p>&copy; 2024 Gym de calidad. Todos los derechos reservados.</p>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./main.js"></script>
+
 </body>
 </html>
