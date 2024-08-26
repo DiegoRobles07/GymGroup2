@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Josefin+Sans:ital,wght@0,500;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -20,13 +23,14 @@ h3{
     height: 60px;
 }
 header {
-    background: #94bbe9;
+    background: #182e34;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
-    
+    position: fixed;
+    width: 100%;
 }
 
 .logo-container{
@@ -38,32 +42,31 @@ header {
     width:150px;
     height: auto;
 }
-
 nav ul {
     font-family: "Cinzel", serif;
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 nav a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .hero {
-    
-    background: url('hero.jpg') no-repeat center center/cover;
+    background-color: #f1fafa;
     text-align: center;
     color: #FFFFFF;
     padding: 5rem 1rem;
 }
-
 .hero h1 {
     
     font-family: "Cinzel", serif;
     font-size: 3rem;
     font-weight: 600;
+    margin-top: 2.5rem;
     font-style: normal;
     color: black;
 }
@@ -73,19 +76,20 @@ nav a {
     font-size: 1.5rem;
     color: #000000;
     padding-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 
 .promociones-1{
     display: grid;
     grid-template-rows: 0.75fr 3fr 0.75fr;
-    background-color: #F4D9D0;
+    background-color: #2f535b;
     border: 1px solid #e0b8ab;
-   padding-bottom: 1rem;
+    padding-bottom: 1rem;
     width: 100%;
     height: 100%;
     text-align: center;
-   
+   color: white;
     
 }
 
@@ -155,7 +159,10 @@ nav a {
     border-radius: 16px;
 }
 
-
+.card-header{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
 
 .description-2{
     display: flex;
@@ -179,7 +186,10 @@ nav a {
 }
 
 .title-suscription{
-    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6rem;
+
 }
 
 input[type="email"] {
@@ -196,18 +206,18 @@ input[type="email"]::placeholder {
     font-style: italic;
 }
 
-button {
+.btn-adduser {
     background-color: #333;
     color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 0 25px 25px 0;
+    border-radius: 25px 25px 25px 25px;
     transition: background-color 0.3s;
 }
 
-button:hover {
+.button:hover {
     background-color: #555;
 }
 
